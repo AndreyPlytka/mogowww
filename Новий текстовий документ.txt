@@ -1,0 +1,21 @@
+Git commands:
+git init-ініціалізація нового  гит репозиторія 
+git add --all -добавлення всіх файлів для відслідковування гітом 
+git commit -m "any comment"-комміт змін 
+git push-пуш змін з локального на віддалений сервер
+git push -u origin master -пуш змін перший раз після створення репозиторія (після створення нової гілки)
+git pull -підтягування змін з сервера 
+git clone https://github.com/AndreyPlytka/mogowww.git -  клонування віддаленого репозиторію 
+git status -показує статус локального репозиторія 
+   
+
+як загрузити існуючий проект на Git hub :
+git init - команда виконується в папці з проектом 
+створити репозиторій на Git hub ,наприклад https://github.com/AndreyPlytka/mogowww.git
+git remote add origin https://github.com/AndreyPlytka/mogowww.git- звязуєм локальний проект зі створеним репозиторієм на
+Git hub
+git add --all 
+git commit -m "any comment"
+git push -u origin master 
+
+new 
