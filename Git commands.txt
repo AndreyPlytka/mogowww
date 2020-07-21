@@ -1,0 +1,46 @@
+Git commands:
+git init-ініціалізація нового  гит репозиторія 
+git add --all -добавлення всіх файлів для відслідковування гітом 
+git commit -m "any comment"-комміт змін 
+git push-пуш змін з локального на віддалений сервер
+git push -u origin master -пуш змін перший раз після створення репозиторія (після створення нової гілки)
+git pull -підтягування змін з сервера 
+git clone https://github.com/AndreyPlytka/mogowww.git -  клонування віддаленого репозиторію 
+git status -показує статус локального репозиторія 
+   
+
+як загрузити існуючий проект на Git hub :
+git init - команда виконується в папці з проектом 
+створити репозиторій на Git hub ,наприклад https://github.com/AndreyPlytka/mogowww.git
+git remote add origin https://github.com/AndreyPlytka/mogowww.git- звязуєм локальний проект зі створеним репозиторієм на
+Git hub
+git add --all 
+git commit -m "any comment"
+git push -u origin master 
+
+new 
+------------------------------------
+-- HOW TO WORK WITH GIT IN TEAM --
+------------ START -----------------
+------------------------------------
+e.g. new task is "what_is_your_branch_about"
+1. git checkout master; - switch to master branch (or other if your main branch is not master)
+2. git pull; - fetch and merge all from github repo, master should point to the main github repo (look settings in config file in .git folder of your project - tags [remote] and [branch])
+3. git checkout -b feature/what_is_your_branch_about; - create new branch "feature/what_is_your_branch_about" and switch to it
+opinta stands for Oleh Pinta (developer's full name)
+4. git push -u origin feature/what_is_your_branch_about; - publish your branch to the github origin, opinta/what_is_your_branch_about should point to your git repo (look settings in config file in .git folder of your project - tags [remote] and [branch])
+-----------------------------------
+DO YOUR WORK ON THE PROJECT LOCALLY
+-----------------------------------
+5. git add --all; - add all to the index (stage) for the commit. Here you can do the gitfilter if you want to add only some files
+6. git commit -m 'your comment'; - commit. To write description that has more then 1 line you should open redactor (just do "git commit" without -m '')
+7. git checkout master; - switch to master branch (or other if your main branch is not master)
+8. git pull; - fetch and merge all from git remote repo
+9. git checkout feature/what_is_your_branch_about; - switch back to the opinta/what_is_your_branch_about branch
+10. git merge master; - get everything from master (or other if your main branch is not master)
+11. git push; - publish all the commits of the current branch (opinta/what_is_your_branch_about) to your fork repo (look settings in config file in .git folder of your project - tags [remote] and [branch])
+______________
+after all create pool request
+-----------------------------------
+---------------END-----------------
+-----------------------------------
